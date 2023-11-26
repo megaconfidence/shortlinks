@@ -4,13 +4,13 @@ import { getDocs, isValid, getHash, saveLink, getLink } from './utils';
 const router = Router();
 
 router.get('/', (_, ...args) => {
-	const [__, url] = args;
-	return new Response(getDocs(url.origin));
+	const [__, origin] = args;
+	return new Response(getDocs(origin));
 });
 
 router.get('/l/:link+', async ({ params }, ...args) => {
 	const link = params.link;
-	const [env, { origin }] = args;
+	const [env, origin] = args;
 
 	if (isValid(link)) {
 		const hash = getHash(link);
