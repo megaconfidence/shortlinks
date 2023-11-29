@@ -12,7 +12,7 @@ compatibility_date = "2023-11-21"
 # Docs: https://developers.cloudflare.com/workers/runtime-apis/kv
 [[kv_namespaces]]
 binding = "LINKS"
-id = "b7e3b14ef694467f929dcf1e9986ab34"
+id = "5a73bf91d0d040a4b8c0df0e24a445d6"
 
 # Bind an R2 Bucket. Use R2 to store arbitrarily large blobs of data, such as files.
 # Docs: https://developers.cloudflare.com/r2/api/workers/workers-api-usage/
