@@ -34,7 +34,7 @@ export async function getLink(hash, env) {
 
 export function getDocs(origin) {
 	return `
-  # link-shortner
+  # link-shortener
 
   To create short links, make a get request with the long link after the 'l' path i.e
   ${origin}/l/https://example.com/
